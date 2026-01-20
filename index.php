@@ -13,16 +13,16 @@ $phone    = "Phone (add yours)";
 $emailTo  = "hello@cygnetinteriors.com"; // change to your email
 
 // IMPORTANT for SEO: replace with your real domain once hosted
-$siteUrl  = "https://www.example.com"; // CHANGE THIS
+$siteUrl  = "https://cygnet-interiors-x336h.ondigitalocean.app/";
 $canonicalUrl = rtrim($siteUrl, "/") . "/";
 
 // Upload these images into the SAME folder as index.php (or adjust paths below)
 $images = [
-  "hero"     => "hero-interior.jpg",      // 21:9
-  "about"    => "about-studio.jpg",       // 4:3
-  "port1"    => "portfolio-living.jpg",   // 3:2
-  "port2"    => "portfolio-bedroom.jpg",  // 3:2
-  "contact"  => "contact-design.jpg",     // 4:5
+  "hero"     => "hero-interior.webp",      // 21:9
+  "about"    => "about-studio.webp",       // 4:3
+  "port1"    => "portfolio-living.webp",   // 3:2
+  "port2"    => "portfolio-bedroom.webp",  // 3:2
+  "contact"  => "contact-design.webp",     // 4:5
 ];
 
 // For better deliverability: use a domain email on your hosting if possible (e.g. no-reply@yourdomain.com)
@@ -866,3 +866,4 @@ $ogImage = rtrim($siteUrl, "/") . "/" . $images["hero"];
   </script>
 </body>
 </html>
+
