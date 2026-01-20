@@ -13,16 +13,16 @@ $phone    = "Phone (add yours)";
 $emailTo  = "hello@cygnetinteriors.com"; // change to your email
 
 // IMPORTANT for SEO: replace with your real domain once hosted
-$siteUrl  = "https://cygnet-interior-sc5h4.ondigitalocean.app"; // CHANGE THIS
+$siteUrl  = "https://www.example.com"; // CHANGE THIS
 $canonicalUrl = rtrim($siteUrl, "/") . "/";
 
 // Upload these images into the SAME folder as index.php (or adjust paths below)
 $images = [
-  "hero"     => "hero-interior.webp",      // 21:9
-  "about"    => "about-studio.webp",       // 4:3
-  "port1"    => "portfolio-living.webp",   // 3:2
-  "port2"    => "portfolio-bedroom.webp",  // 3:2
-  "contact"  => "contact-design.webp",     // 4:5
+  "hero"     => "hero-interior.jpg",      // 21:9
+  "about"    => "about-studio.jpg",       // 4:3
+  "port1"    => "portfolio-living.jpg",   // 3:2
+  "port2"    => "portfolio-bedroom.jpg",  // 3:2
+  "contact"  => "contact-design.jpg",     // 4:5
 ];
 
 // For better deliverability: use a domain email on your hosting if possible (e.g. no-reply@yourdomain.com)
@@ -372,267 +372,7 @@ $ogImage = rtrim($siteUrl, "/") . "/" . $images["hero"];
   <header>
     <div class="container">
       <div class="topbar">
-        <div class="brand">    <!-- HERO / BANNER -->
-    <section class="hero" id="home" aria-label="Hero">
-      <div class="heroMedia" role="img" aria-label="Luxury interior design background image">
-        <div class="container heroInner">
-          <div class="heroGrid">
-            <div>
-              <div class="kicker">Refined concepts · Elevated finishes · White-glove execution</div>
-              <h1>Spaces that feel effortless, timeless, and quietly bold.</h1>
-              <p class="lead">
-                <?php echo h($siteName); ?> designs luxury interiors that balance clarity, warmth, and precision—
-                from concept and layout to finishes, furnishing direction, and final styling.
-              </p>
-              <div class="pillRow" aria-label="Highlights">
-                <span class="pill">Residential design</span>
-                <span class="pill">Boutique hospitality</span>
-                <span class="pill">Finish & material curation</span>
-                <span class="pill">Full-service styling</span>
-              </div>
-            </div>
-
-            <aside class="panel">
-              <div class="pad">
-                <strong style="font-family:var(--serif); font-size:18px; display:block; margin-bottom:10px;">
-                  Signature approach
-                </strong>
-
-                <div class="feature">
-                  <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                  <div>
-                    <strong>Quiet luxury</strong>
-                    <p>Proportion, texture, and restraint—without sacrificing impact.</p>
-                  </div>
-                </div>
-
-                <div style="height:10px;"></div>
-
-                <div class="feature">
-                  <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                  <div>
-                    <strong>Material clarity</strong>
-                    <p>Finishes chosen for longevity, touch, and light behavior.</p>
-                  </div>
-                </div>
-
-                <div style="height:10px;"></div>
-
-                <div class="feature">
-                  <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                  <div>
-                    <strong>Decisive process</strong>
-                    <p>A structured workflow that reduces revisions and protects timelines.</p>
-                  </div>
-                </div>
-
-              </div>
-            </aside>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" aria-label="About Cygnet Interiors">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2>About</h2>
-          <p>Design with intention—built around light, proportion, and finely layered detail.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="panel">
-            <div class="pad">
-              <div class="kicker" style="margin-bottom:10px;">Studio philosophy</div>
-              <p class="lead" style="margin:0;">
-                We create interiors that read calm at first glance and reveal depth over time.
-                Our work is driven by architectural logic, tactile materials, and a curated palette that feels tailored—not trendy.
-              </p>
-
-              <div style="height:14px;"></div>
-
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>Designed for living</strong>
-                  <p>Beautiful layouts that also function effortlessly day-to-day.</p>
-                </div>
-              </div>
-
-              <div style="height:10px;"></div>
-
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>Finish discipline</strong>
-                  <p>Fewer, better materials—selected for cohesion and longevity.</p>
-                </div>
-              </div>
-
-              <div style="height:10px;"></div>
-
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>Curated sourcing</strong>
-                  <p>Furniture and décor direction aligned with the overall concept.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="imgBox" style="aspect-ratio:4/3;">
-              <img
-                src="<?php echo h($images['about']); ?>"
-                alt="Cygnet Interiors studio moodboard and materials"
-                loading="lazy"
-                width="1600" height="1200"
-              >
-            </div>
-            <div class="pad">
-              <p class="small" style="margin:0;">
-                The best interiors feel inevitable: every line, texture, and tone belongs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" aria-label="Services">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2>Services</h2>
-          <p>From concept to completion—select the level of support that matches your project.</p>
-        </div>
-
-        <div class="grid3">
-          <div class="panel">
-            <div class="pad">
-              <strong style="font-family:var(--serif); font-size:18px;">Concept & direction</strong>
-              <p class="small" style="margin-top:8px;">
-                Spatial planning, mood, palette, and a clear design narrative that guides every decision.
-              </p>
-              <div style="height:10px;"></div>
-              <p class="small" style="margin:0;">
-                Deliverables: concept deck, palette, layout guidance, key finish direction.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="pad">
-              <strong style="font-family:var(--serif); font-size:18px;">Finishes & materials</strong>
-              <p class="small" style="margin-top:8px;">
-                Curated surfaces, fixtures, and details that hold up under real light and real life.
-              </p>
-              <div style="height:10px;"></div>
-              <p class="small" style="margin:0;">
-                Deliverables: finish schedule, material shortlist, detail alignment.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="pad">
-              <strong style="font-family:var(--serif); font-size:18px;">Furnishing & styling</strong>
-              <p class="small" style="margin-top:8px;">
-                Furniture direction and layered styling to complete the space with restraint and intention.
-              </p>
-              <div style="height:10px;"></div>
-              <p class="small" style="margin:0;">
-                Deliverables: furnishing plan, key pieces, styling guidance.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div style="height:16px;"></div>
-
-        <div class="panel">
-          <div class="pad">
-            <div class="kicker" style="margin-bottom:10px;">How it works</div>
-            <div class="grid3">
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>1) Discovery</strong>
-                  <p>Goals, constraints, timelines, references, and project scope.</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>2) Design</strong>
-                  <p>Concept, layout refinement, and material direction.</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div style="min-width:10px;height:10px;margin-top:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(215,185,138,.12)"></div>
-                <div>
-                  <strong>3) Styling</strong>
-                  <p>Layering, finishing touches, and final polish.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" aria-label="Portfolio">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2>Portfolio</h2>
-          <p>Two example directions—replace with your own imagery as you build the portfolio.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="panel">
-            <div class="imgBox" style="aspect-ratio:3/2;">
-              <img
-                src="<?php echo h($images['port1']); ?>"
-                alt="Luxury living space designed by Cygnet Interiors"
-                loading="lazy"
-                width="1800" height="1200"
-              >
-            </div>
-            <div class="pad">
-              <strong style="font-family:var(--serif); font-size:18px;">Living spaces</strong>
-              <p class="small" style="margin-top:6px;">
-                Layered neutrals, controlled contrast, and a furniture plan that feels collected.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="imgBox" style="aspect-ratio:3/2;">
-              <img
-                src="<?php echo h($images['port2']); ?>"
-                alt="Luxury bedroom interior designed by Cygnet Interiors"
-                loading="lazy"
-                width="1800" height="1200"
-              >
-            </div>
-            <div class="pad">
-              <strong style="font-family:var(--serif); font-size:18px;">Private suites</strong>
-              <p class="small" style="margin-top:6px;">
-                Quiet palettes, premium textiles, and softened lighting for depth and calm.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
+        <div class="brand">
           <strong><?php echo h($siteName); ?></strong>
           <span>Luxury Interior Design</span>
         </div>
@@ -925,7 +665,6 @@ $ogImage = rtrim($siteUrl, "/") . "/" . $images["hero"];
 
       </div>
     </section>
-
     <!-- CONTACT -->
     <section id="contact" aria-label="Contact">
       <div class="container">
@@ -1127,4 +866,3 @@ $ogImage = rtrim($siteUrl, "/") . "/" . $images["hero"];
   </script>
 </body>
 </html>
-
